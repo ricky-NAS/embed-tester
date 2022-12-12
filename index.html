@@ -1,0 +1,35 @@
+<html>
+
+<head>
+  <title>
+    Embed Tester
+  </title>
+  <script>
+
+    let newWindow;
+
+    function openWindow(script) {
+      newWindow = window.open("", "newWindow");
+      newWindow.document.write(script);
+      newWindow.document.close();
+    }
+
+
+  </script>
+</head>
+
+<body bgColor="White">
+  <center>
+    <form name="myForm">
+      <input type="button" value="Open in New Tab" onClick=openWindow(window.document.myForm.txtInput.value)>
+
+      <br>
+      Paste the embed code below
+      <br>
+        <textArea name=txtInput id="txtInput" rows=40 cols=50></textArea>
+      <br>
+    </form>
+  </center>
+</body>
+
+</html>
