@@ -1,1 +1,3 @@
 # embed-tester
+
+MIT License
